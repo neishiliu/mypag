@@ -1,16 +1,16 @@
+/*全局样式*/
 *{
     margin: 0;
     padding: 0;
 }
 html{
     width: 100%;
-
-
 }
 body{
     font-family: "Microsoft YaHei",serif;
     font-size: 62.5%;
 }
+/*首页*/
 .header{
     width: 100%;
     height: 600px;
@@ -57,4 +57,41 @@ body{
 .glyphicon-chevron-down:before {
     position: absolute;
     bottom: 0;
+}
+/*导航栏*/
+.nav-name{
+    color: #000!important;
+    font-weight: 400;
+}
+@media screen and (min-width: 768px){
+    .navbar-nav {
+        float: right;
+        margin: 0;
+        margin-right: 25%;
+    }
+    .nav-name{
+        margin-left: 150px;
+    }
+}
+.navbar-default .navbar-nav>li>a{    /*过渡动画效果*/
+    transition:background-color 1s ease;
+    -moz-transition:background-color 1s ease; /* Firefox 4 */
+    -webkit-transition:background-color 1s ease; /* Safari and Chrome */
+    -o-transition:background-color 1s ease; /* Opera */
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active{
+    background-color: #337ab7!important;
+    color: #fff!important;
+}
+.navbar-default .navbar-nav>.active>a{
+    color: #fff;
+    background-color: #337ab7;
+}
+
+
+
+
+div#contact {
+    margin-bottom: 200px;
 }

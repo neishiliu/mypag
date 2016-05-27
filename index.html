@@ -25,17 +25,58 @@
         <p class="visit" id="view">开始参观</p>
         <span class="down glyphicon glyphicon-chevron-down"></span>
     </div>
-    <div class="container">
+    <!--导航部分-->
+    <nav class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand nav-name" href="#">刘&nbsp;&nbsp;&nbsp;强</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#head">首&nbsp;&nbsp;页</a></li>
+                <li><a href="#about-me">关于我</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        作品集 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#works">作品一</a></li>
+                        <li><a href="#works">作品二</a></li>
+                        <li><a href="#works">作品三</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--自我介绍部分-->
+    <div class="container about-me" id="about-me">
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <h3>刘&nbsp;&nbsp;&nbsp;强</h3>
+            <div class="sol-md-12">
+                sss
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">Profile</a></li>
-                    <li role="presentation"><a href="#">Messages</a></li>
-                </ul>
+        </div>
+    </div>
+    <!--作品列表部分-->
+    <div class="container works" id="works">
+        <div class="row">
+            <div class="sol-md-12">
+                sssssss
+            </div>
+        </div>
+    </div>
+    <!--联系方式部分-->
+    <div class="container contact" id="contact">
+        <div class="row">
+            <div class="sol-md-12">
+                contact
             </div>
         </div>
     </div>
