@@ -10,10 +10,22 @@ body{
     font-family: "Microsoft YaHei",serif;
     font-size: 62.5%;
 }
+li{
+    list-style: none;
+}
+h2{
+    font-size: 2.8rem;
+    margin-top: 8%;
+}
+h3{
+    font-size: 1.5rem;
+    color: #999;
+    margin-top: 1%;
+}
 /*首页*/
 .header{
     width: 100%;
-    height: 600px;
+
     background: url("../images/3.jpg") no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,10 +100,58 @@ body{
     color: #fff;
     background-color: #337ab7;
 }
+/*自我介绍部分*/
+h4{
+    font-size: 2rem;
+    margin-top: 0;
+}
+h4 span{
+    font-size: 1.5rem;
+    color: #999;
+    display: inline-block;
+    padding: 3% 0;
+}
+.glyphicon{
+    font-size: 2rem;
+    float: right;
+    background-color: #337ab7;
+    color: #fff;
+}
+.glyphicon-user:before,
+.glyphicon-edit:before,
+.glyphicon-envelope{     /*每个板块的右边的图标*/
+    display: inline-block;
+    padding: 13px;
+}
+.about-me img{
+    width: 320px;
+    float:left;
+    margin-right: 2%;
+}
+.about-me-content,.about-me-skill{
+    margin: 4% 0;
+}
+/*作品列表部分*/
+.work-1,.work-2,.work-3,.work-4,.work-5,.work-6{
+    margin: 4% 0;
+}
+/*联系方式部分*/
+.contact-content{
+    margin: 4% 0 100px 0;
+}
+.contact ul li{
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 2% 0;
+}
 
 
-
-
-div#contact {
-    margin-bottom: 200px;
+@media screen and (max-width: 768px){
+    html,body{
+        font-size: 40% !important;
+    }
+    h4{
+        padding-top: 10px!important;
+        clear: both;
+    }
 }
