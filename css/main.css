@@ -132,8 +132,46 @@ h4 span{
     margin: 4% 0;
 }
 /*作品列表部分*/
-.work-1,.work-2,.work-3,.work-4,.work-5,.work-6{
+.work{
     margin: 4% 0;
+    overflow: hidden;
+}
+.work-content{
+    position: relative;
+}
+.works-hover{
+    position: absolute;
+    top: 7%;
+    left: 0;
+    margin: 0 15px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: rotateY(90deg);
+}
+.work-content:hover .works-hover{
+    transition:transform 0.5s linear 0.2s;
+    transform:rotateY(0deg);
+}
+.works-hover a{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.more{
+    font-size: 5rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 /*联系方式部分*/
 .contact-content{
@@ -144,7 +182,56 @@ h4 span{
     font-weight: 200;
     margin: 2% 0;
 }
+.weixin{
+    width:100%;
+    overflow:hidden;
+}
+.weixin img{
+    width:100%;
+}
+.weixin_in{
+     margin-top:0;
+     transition:all 0.5s linear;
+     -webkit-transition:all 0.5s linear;
 
+ }
+.erweima_in{
+    margin-top:100%;
+    transition:all 0.5s linear;
+    -webkit-transition:all 0.5s linear;
+    display:none;
+}
+.weixin:hover .weixin_in{
+    margin-top:-100%;
+}
+.weixin:hover .erweima_in{
+    margin-top:0;
+    display:block;
+}
+/*fdsg*/
+.contact-hover:hover .contact-hover-main{
+    transition:transform 0.5s linear 0.2s;
+    transform:rotateY(0deg);
+}
+.contact-hover-main{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    transform-style: preserve-3d;
+    transform: rotateY(90deg);
+}
+.contact-hover-main a{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
 
 @media screen and (max-width: 768px){
     html,body{
