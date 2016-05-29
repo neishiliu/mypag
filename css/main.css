@@ -22,11 +22,14 @@ h3{
     color: #999;
     margin-top: 1%;
 }
+p{
+    font-size: 1.5rem;
+}
 /*Ê×Ò³*/
 .header{
     width: 100%;
-
-    background: url("../images/3.jpg") no-repeat;
+    background-image: url("../images/3.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -65,10 +68,25 @@ h3{
     position: absolute;
     left: 50%;
     bottom: 20px;
+    cursor: pointer;
+    animation:move 0.5s infinite alternate;
+    -webkit-animation:move 0.5s infinite alternate; /*Safari and Chrome*/
+}
+@keyframes move {
+    from{bottom:20px;}
+    to{bottom:10px;}
+}
+@-webkit-keyframes move /*Safari and Chrome*/
+{
+    from {bottom:20px;}
+    to {bottom:10px;}
 }
 .glyphicon-chevron-down:before {
     position: absolute;
     bottom: 0;
+}
+.visit{
+    cursor: pointer;
 }
 /*µ¼º½À¸*/
 .nav-name{
