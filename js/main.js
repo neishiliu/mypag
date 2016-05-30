@@ -11,7 +11,7 @@ $(function(){
 function changeHeight(){
     var win_height = document.documentElement.clientHeight ;
     var new_height = win_height - "50";
-    $("#head").css({"height":new_height});
+    $("#head,.banner").css({"height":new_height});
 }
 //»ñÈ¡Í¼Æ¬³ß´ç£¬²¢¸½¸ø·­×ª±³¾°
 function getSize(){
@@ -29,15 +29,25 @@ $("#view,#down").click(function() {
     return false;
 });
 //Ê×Ò³±³¾°Í¼ÂÖ²¥
-setInterval("carousel()",3000);
-    var i=0;
-function carousel(){
-    var imgs=["1.jpg","2.jpg","3.jpg"];
-    if (i>=imgs.length){
-        i=0;
-    } else {
-        var imgs_url= "url('" + "images/" + imgs[i] + "')";
-        $("#head").css("background-image",imgs_url);
-        i++;
+$("#banner_1").fadeToggle(1000);
+var a=1;
+setInterval("time()",3000);
+function time(){
+    a++;
+    if (a==4){
+        a=1;
+    }
+    if (a==2){
+        $("#banner_1").fadeOut(1000);
+        $("#banner_2").fadeIn(1000);
+    }
+    if (a==3){
+        $("#banner_2").fadeOut(1000);
+        $("#banner_3").fadeIn(1000);
+    }
+    if (a==1){
+        $("#banner_3").fadeOut(1000);
+        $("#banner_1").fadeIn(1000);
     }
 }
+

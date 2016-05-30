@@ -22,19 +22,38 @@ h3{
     color: #999;
     margin-top: 1%;
 }
-p{
+p,a,li{
     font-size: 1.5rem;
 }
 /*Ê×Ò³*/
 .header{
-    width: 100%;
-    background-image: url("../images/3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     text-align: center;
     color: #fff;
     position: relative;
+}
+#banner_1{
+    background-image: url("../images/1.jpg");
+    z-index: -1;
+    display:none;
+}
+#banner_2{
+    background-image: url("../images/2.jpg");
+    z-index: -2;
+    display:none;
+}
+#banner_3{
+    background-image: url("../images/3.jpg");
+    z-index: -3;
+    display:none;
+}
+.banner{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .header .name{
     font-size: 5rem;
