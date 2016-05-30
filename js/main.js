@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Created by Administrator on 2016/5/26.
  */
 $(function(){
@@ -7,13 +7,13 @@ $(function(){
 
 });
 
-//¸ü¸ÄÖ÷Ò³¸ß¶È£¬Ê¹ÆäÕ´Âúä¯ÀÀÆ÷´°¿Ú
+//æ›´æ”¹ä¸»é¡µé«˜åº¦ï¼Œä½¿å…¶æ²¾æ»¡æµè§ˆå™¨çª—å£
 function changeHeight(){
     var win_height = document.documentElement.clientHeight ;
     var new_height = win_height - "50";
     $("#head,.banner").css({"height":new_height});
 }
-//»ñÈ¡Í¼Æ¬³ß´ç£¬²¢¸½¸ø·­×ª±³¾°
+//è·å–å›¾ç‰‡å°ºå¯¸ï¼Œå¹¶é™„ç»™ç¿»è½¬èƒŒæ™¯
 function getSize(){
     var $img_height = $(".work").height();
     var $img_width = $(".work").width();
@@ -22,13 +22,13 @@ function getSize(){
     var $contact_img_width = $(".git").width();
     $(".contact-hover-main").height($contact_img_height).width($contact_img_width);
 }
-//µã»÷Ê×Ò³Ïà¹ØÔªËØºóÒ³ÃæÏòÏÂ»¬¶¯
+//ç‚¹å‡»é¦–é¡µç›¸å…³å…ƒç´ åé¡µé¢å‘ä¸‹æ»‘åŠ¨
 $("#view,#down").click(function() {
     var win_height = document.documentElement.clientHeight ;
     $("html, body").animate({ scrollTop: win_height }, "slow");
     return false;
 });
-//Ê×Ò³±³¾°Í¼ÂÖ²¥
+//é¦–é¡µèƒŒæ™¯å›¾è½®æ’­
 $("#banner_1").fadeToggle(1000);
 var a=1;
 setInterval("time()",3000);

@@ -141,6 +141,7 @@ p,a,li{
 h4{
     font-size: 2rem;
     margin-top: 0;
+    margin-bottom: 0;
 }
 h4 span{
     font-size: 1.5rem;
@@ -164,6 +165,9 @@ h4 span{
     width: 320px;
     float:left;
     margin-right: 2%;
+}
+.introduce span{
+    color: #337ab7;
 }
 .about-me-content,.about-me-skill{
     margin: 4% 0;
